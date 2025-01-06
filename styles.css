@@ -1,0 +1,194 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+  font-size: 1.4rem;
+  font-family: Monsterrat, sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  font-family: Fraunces, sans-serif;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.card {
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.img-card {
+  width: 25%;
+}
+
+.img-card img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.info-card {
+  padding: 2rem;
+  max-width: 25%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0;
+}
+
+.new-product {
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.product-name {
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 0.7em;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.product-description {
+  margin-bottom: 0.85em;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+  margin-bottom: 1.5em;
+}
+
+.prices p {
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.prices h1 {
+  font-size: 2.5rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 1em 5.7em 1em 5.7em;
+  border-radius: 7px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(159, 36%, 47%);
+  transition: all 0.3s;
+}
+
+.btn p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    flex-direction: column;
+    max-width: 345px;
+  }
+
+  .img-card {
+    width: 100%;
+  }
+
+  .img-card img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .info-card {
+    max-width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 2em;
+  }
+
+  .info-card h1 {
+    font-size: 3rem;
+  }
+
+  .info-card p {
+    font-size: 1.69rem;
+  }
+
+  .btn {
+    padding: 1em 9.4em 1em 9.4em;
+  }
+}
