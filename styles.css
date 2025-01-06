@@ -87,7 +87,7 @@ h6 {
 }
 
 .img-card {
-  width: 25%;
+  width: 20%;
 }
 
 .img-card img {
@@ -96,8 +96,8 @@ h6 {
 }
 
 .info-card {
-  padding: 2rem;
-  max-width: 25%;
+  padding: 4em;
+  max-width: 20%;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0 10px 10px 0;
 }
@@ -105,19 +105,20 @@ h6 {
 .new-product {
   letter-spacing: 4px;
   font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 1em;
+  font-size: 1.4rem;
+  margin-bottom: 1.4em;
 }
 
 .product-name {
   color: hsl(212, 21%, 14%);
-  margin-bottom: 0.7em;
-  line-height: 2.5rem;
-  font-size: 2.5rem;
+  margin-bottom: 0.85em;
+  line-height: 3rem;
+  font-size: 3rem;
 }
 
 .product-description {
   margin-bottom: 0.85em;
+  font-size: 1.4rem;
 }
 
 .prices {
@@ -129,7 +130,7 @@ h6 {
 
 .prices p {
   text-decoration: line-through;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .prices h1 {
@@ -143,7 +144,7 @@ h6 {
   border: none;
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
-  padding: 1em 5.7em 1em 5.7em;
+  padding: 1em 5.76em 1em 5.76em;
   border-radius: 7px;
   align-items: center;
   cursor: pointer;
